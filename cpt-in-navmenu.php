@@ -4,7 +4,7 @@ Plugin Name: Custom Post Type Archive Menu
 Plugin URI: http://wpcptam.allstruck.com/
 Description: This plugin makes it easy to add a new menu items for custom post type archives, and also fixes the bug which shows the Blog menu item as the parent when on any custom post type page or archive.
 Author: AllStruck
-Version: 1.0
+Version: 1.1
 Author URI: http://allstruck.com/
 License: GPL v3
 Text Domain: allstruckwpcptam
