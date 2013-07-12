@@ -4,7 +4,7 @@ Plugin Name: Custom Post Type Archive Menu
 Plugin URI: http://wpcptam.allstruck.com/
 Description: This plugin makes it easy to add a new menu items for custom post type archives, and also fixes the bug which shows the Blog menu item as the parent when on any custom post type page or archive.
 Author: AllStruck
-Version: 1.2
+Version: 1.3
 Author URI: http://allstruck.com/
 License: GPL v3
 Text Domain: allstruckwpcptam
@@ -120,7 +120,7 @@ if( !class_exists('CustomPostTypeArchiveInNavMenu') ) {
 		# Auto updates from GitHub Repo using updater.php script by jkudish.
 		function updater_init() {
 
-			include_once 'updater.php';
+			include_once plugin_dir_path( __FILE__ ) . '/custom-post-type-archive-menu/updater.php';
 
 			define( 'WP_GITHUB_FORCE_UPDATE', true );
 
