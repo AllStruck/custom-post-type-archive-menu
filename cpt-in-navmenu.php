@@ -4,7 +4,7 @@ Plugin Name: Custom Post Type Archive Menu
 Plugin URI: http://wpcptam.allstruck.com/
 Description: This plugin makes it easy to add a new menu items for custom post type archives, and also fixes the bug which shows the Blog menu item as the parent when on any custom post type page or archive.
 Author: AllStruck
-Version: 1.1
+Version: 1.2
 Author URI: http://allstruck.com/
 License: GPL v3
 Text Domain: allstruckwpcptam
@@ -49,7 +49,7 @@ if( !class_exists('CustomPostTypeArchiveInNavMenu') ) {
 		}
 		
 		function cpt_navmenu_metabox() {
-	    	add_meta_box( 'add-cpt', __('Custom Post Type Archives', 'andromedamedia'), array( &$this, 'cpt_navmenu_metabox_content' ), 'nav-menus', 'side', 'default' );
+	    	add_meta_box( 'add-cpt', __('Custom Post Type Archives', 'allstruck'), array( &$this, 'cpt_navmenu_metabox_content' ), 'nav-menus', 'side', 'default' );
 	  	}
 		
 		function cpt_navmenu_metabox_content() {
@@ -82,7 +82,7 @@ if( !class_exists('CustomPostTypeArchiveInNavMenu') ) {
 				echo '<p class="button-controls">';
 				echo '<span class="add-to-menu">';
 				//echo '<img class="waiting" src="' . esc_url( admin_url( 'images/wpspin_light.gif' ) ) . '" alt="" />';
-				echo '<input type="submit" class="button-secondary submit-add-to-menu" value="' . __('Add to Menu', 'andromedamedia') . '" name="add-ctp-archive-menu-item" id="submit-cpt-archive" />';
+				echo '<input type="submit" class="button-secondary submit-add-to-menu" value="' . __('Add to Menu', 'allstruck') . '" name="add-ctp-archive-menu-item" id="submit-cpt-archive" />';
 				echo '</span>';
 				echo '</p>';
 				
@@ -129,10 +129,10 @@ if( !class_exists('CustomPostTypeArchiveInNavMenu') ) {
 				$config = array(
 					'slug' => plugin_basename( __FILE__ ),
 					'proper_folder_name' => 'custom-post-type-archive-menu',
-					'api_url' => 'https://api.github.com/repos/allstruck/https://github.com/AllStruck/custom-post-type-archive-menu.git',
-					'raw_url' => 'https://raw.github.com/allstruck/https://github.com/AllStruck/custom-post-type-archive-menu.git/master',
-					'github_url' => 'https://github.com/allstruck/https://github.com/AllStruck/custom-post-type-archive-menu.git',
-					'zip_url' => 'https://github.com/allstruck/https://github.com/AllStruck/custom-post-type-archive-menu.git/zipball/master',
+					'api_url' => 'https://api.github.com/repos/allstruck/custom-post-type-archive-menu',
+					'raw_url' => 'https://raw.github.com/allstruck/custom-post-type-archive-menu/master',
+					'github_url' => 'https://github.com/allstruck/custom-post-type-archive-menu',
+					'zip_url' => 'https://github.com/allstruck/custom-post-type-archive-menu/archive/master.zip',
 					'sslverify' => true,
 					'requires' => '3.0',
 					'tested' => '3.3',
